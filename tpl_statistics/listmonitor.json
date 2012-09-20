@@ -1,0 +1,32 @@
+{
+    "template-file-name"    : "./tplListStatistics.java",
+    "monitor-class" : 
+        {
+            "gen-script-class-name" : "MonitorListClass",
+            "print-interval"        : 4000
+        },
+
+    "monitor-targets"       : [
+        {
+            "display-name"          : "LinkedList Get",
+            "target-class-name"     : "java.util.LinkedList",
+            "target-method-name"    : "get"
+        },
+        {
+            "display-name"          : "LinkedList Contains",
+            "target-class-name"     : "java.util.LinkedList",
+            "target-method-name"    : "contains"
+        }
+    ],
+
+
+    "replacement-map-list" :
+    	{
+    		"gen-script-class-name" : "Template__BtraceScriptClass__",
+    		"print-interval"   		: "Template__PrintInterval_ms__",
+            "display-name"          : "Template__MethodDisplayName__",
+            "naming-suffix"         : "Template_MonitorMethodName__",
+            "target-class-name"     : "Template_ClassPathAndName__",
+            "target-method-name"    : "Template_MethodName__"
+        }
+}

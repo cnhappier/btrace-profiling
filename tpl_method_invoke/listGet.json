@@ -1,0 +1,24 @@
+{
+    "template-file-name"    : "tplMethodInvoking.java",
+    "monitor-class" : 
+    {
+        "gen-script-class-name" : "TraceListClassMonitorInvoking"
+    },
+
+    "monitor-targets"       : [
+        {
+            "display-name"          : "Linked List Get",
+            "target-class-name"     : "java.util.LinkedList",
+            "target-method-name"    : "get"
+        }
+    ],
+
+    "replacement-map-list" :
+        {
+            "gen-script-class-name" : "Template__BtraceScriptClass__",
+            "display-name"          : "Template__MethodDisplayName__",
+            "target-class-name"     : "Template_ClassPathAndName__",
+            "target-method-name"    : "Template_MethodName__",
+            "naming-suffix"         : "Template_MonitorMethodName__"
+        }
+}
