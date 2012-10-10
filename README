@@ -3,7 +3,7 @@ btrace-profiling
 
 Btrace tools for performacne tuning
 
-Now, btrace tools support two different way for performacne profiling.
+Now, this tool support two different way for performacne profiling.
 1.statistc for target method, prints result from time to time, you can specified the time period
 2.method invoke, prints result when target mehtod invoking.
 
