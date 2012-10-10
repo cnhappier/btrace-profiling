@@ -17,7 +17,7 @@ confFileName = ""
 if len(args) < 2:
     print "The configure file name argument is needed"
     print "Command Format is:"
-    print "   > btraceGenerator.py <Json Configure File Name>"
+    print "   > btgen.py <Json Configure File Name>"
     exit()
 else:
     confFileName = args[1]

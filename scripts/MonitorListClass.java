@@ -124,7 +124,7 @@ public class MonitorListClass {
             if(executeTimesLinkedListGet < currentMin){
                boolean updated = compareAndSet(minExecuteTimesLinkedListGet,currentMin,executeTimesLinkedListGet);
                if(!updated){
-                   currentMin = get(minExecuteTimesLinkedListGet);
+                  currentMin = get(minExecuteTimesLinkedListGet);
                   if(executeTimesLinkedListGet < currentMin){
                      updated = compareAndSet(minExecuteTimesLinkedListGet,currentMin,executeTimesLinkedListGet);
                   }
@@ -183,7 +183,7 @@ public class MonitorListClass {
             if(executeTimesLinkedListContains < currentMin){
                boolean updated = compareAndSet(minExecuteTimesLinkedListContains,currentMin,executeTimesLinkedListContains);
                if(!updated){
-                   currentMin = get(minExecuteTimesLinkedListContains);
+                  currentMin = get(minExecuteTimesLinkedListContains);
                   if(executeTimesLinkedListContains < currentMin){
                      updated = compareAndSet(minExecuteTimesLinkedListContains,currentMin,executeTimesLinkedListContains);
                   }

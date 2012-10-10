@@ -1,0 +1,38 @@
+btrace-profiling
+================
+
+Btrace tools for performacne tuning
+
+Now, btrace tools support two different way for performacne profiling.
+1.statistc for target method, prints result from time to time, you can specified the time period
+2.method invoke, prints result when target mehtod invoking.
+
+
+How can I get btrace?
+http://kenai.com/projects/btrace/
+
+
+How to use it?
+1.Prepare json file for statistc, example "listmonitor.json'
+2.Run "btgen.py tpl_statistics\listmonitor.json"
+3.Found generate file in scripts folder, example "MonitorListClass.java"
+4.Run btrace with process and this generated java file.
+bin/btrace <process id> <generate java file> 
+
+
+How can I create my own json file?
+You need to change this fields.
+monitor-class
+	gen-script-class-name : generated java file name in scripts folder
+	print-interval : prints result for every specified interval, milliseconds
+monitor-targets
+	display-name : the output name of the target method 
+	target-class-name : class name with package
+	target-method-name : method name
+
+DON'T change the fields list below, unless you know what you're doing.
+template-file-name : specify the template file for generate java file
+replacement-map-list : pre-defined name in java file generation
+
+
+Enjoy~
